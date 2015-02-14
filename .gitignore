@@ -1,0 +1,9 @@
+*.tex
+/**/
+*.log
+*.sty
+*.out
+*.aux
+*.pdf
+*.cls
+*.gz

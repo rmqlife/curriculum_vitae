@@ -1,0 +1,121 @@
+%% start of file `jdoe_casual.tex'.
+%% Copyright 2006 Xavier Danaux.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt]{moderncv}
+%\usepackage{bbding}
+% moderncv styles
+\moderncvstyle[roman]{casual}        % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvstyle{classic}       % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+
+% personal data (the given example is exhaustive; just give what you want)
+%\firstname{DONG} \familyname{\hspace{0.5em}LI }
+%\title{Design enthusiast\dots}
+%\address{12 somestreet\\3456 somecity} % for classic style
+%\address{12 somestreet, 3456 somecity}  % for casual style
+
+\phone{phone number} \email{my email}
+
+%\extrainfo{\weblink{www.ctan.org}}
+
+%\photo[50pt]{face.jpg} % also optional, and the optional argument is the height the picture must be resized to
+
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+\newcommand{\listitem}[1]{\textbullet\hspace{1em}\parbox[t]{13cm}{#1}\vspace{0.5em}}
+
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textsf{\scriptsize#1}}}% for text subscripts
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\begin{CJK*}{GBK}{kai}
+ \firstname{Name} \familyname{\hspace{0.2em}CN}
+ \cnname{\hspace{0.2em}中文名}
+ \maketitle
+%\makequote
+\hspace{0em}
+\parbox[t]{8cm}{address1\\address2\\
+address3\\
+address 4
+} \hspace{1em}
+\parbox[t]{2cm}{
+               \textbf{Mobile:}\\
+               \textbf{Office:}\\
+               \textbf{E-mail:}\\
+               \textbf{HomePage:}\\
+               }
+\hspace{1em}
+\parbox[t]{4cm}{
+               手机号\\
+               固定电话\\
+               邮箱\\
+               主页 }
+\vspace{0.5cm}
+\section{Education}
+\cventry{2005--now}{BS in Information Security}{University of
+Science and Technology of China (USTC). 2005-2009 (expected)}{}{}{GPA: 3.76/4.3}
+
+\section{Research Interest}
+\cvitem{} {我的研究兴趣}
+
+\section{获得的奖励}
+
+\cventry{2008, summer} {我的奖项}{}{}{}{}
+
+\cvitem{} { 用listitems 做列表\\\listitem{item1} \listitem{item2} }
+%-------------------------------------------------------------
+
+\section{计算机技术}
+\cvcomputer{programming}{C/C++, C\#, HTML}{}{}
+\cvcomputer{scientific}{Matlab, Maple, Origin}{}{}
+\cvcomputer{typography}{\LaTeX{}, MS Office}{}{}
+
+\section{Publications}
+\cvitem{[1]}{\textbf{Author},other author.\textrm{\textit{My
+paper}}. some conference \& publisher }
+
+
+
+%\section{Section with your own content}\closesection
+%Your content here, inside the normal \LaTeX{} environment. You can use any regular \LaTeX{} command, display mathematics
+%\[e =m\,c^2,\]
+%put some table or figure, \dots
+
+%\emptysection{}
+%\cvitem{Now}{Back to moderncv layout, without making a new section :-)}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{jdoe_publications}
+\end{CJK*}
+\end{document}
+
+
+%% end of file `jdoe_casual.tex'.

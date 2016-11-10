@@ -25,7 +25,7 @@
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-\usepackage[scale=0.8]{geometry} % Reduce document margins
+\usepackage[scale=0.86]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 %----------------------------------------------------------------------------------------
@@ -42,7 +42,6 @@
 %\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
 \photo[70pt][0.4pt]{pictures/head-2} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-\quote{"Action is eloquence."}
 %----------------------------------------------------------------------------------------
 \begin{document}
 \makecvtitle % Print the CV title
@@ -50,15 +49,14 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\cventry{Sept.2016-Present}{University of North Carolina at Chapel Hill}{Chapel Hill}{Master of Science} {specialized in Computer Science and Technology}{}{}
-\cventry{Sept.2010-July.2014}{Tsinghua University}{Beijing}{B.Eng} {specialized in Computer Science and Technology}{}{} 
+\cventry{Aug.2016-Present}{University of North Carolina at Chapel Hill}{ph.D candidate}{}{advised by Dinesh Manocha}{}{}
+\cventry{Sept.2010-July.2014}{Tsinghua University}{Beijing}{B.Eng} {Computer Science and Technology}{}{} 
 % Arguments not required can be left empty
 \section{Relevant Skills}
-\cvitem{Advanced}{OpenCV, Java, C++, Python, Tesseract}
-\cvitem{Intermediate}{Matlab ,\LaTeX, Bash, VHDL, Pascal}
-\cvitem{Basic}{Objective C, Arduino, Flask, PCB design}
+\cvitem{Language}{C++, Python, Matlab, Bash}
+\cvitem{Framework}{ROS, OpenCV, OpenAI, Flask}
 \section{Employment History}
-\cventry{July.2014-May.2015}{Landscape Mobile Tech Co.,Ltd.}{Beijing}{Engineer and Leader of Algorithm Team}{}{
+\cventry{July.2014-May.2015}{Landscape Mobile Tech Co.,Ltd.}{Beijing}{Leader of Algorithm Team}{}{
 Designed algorithm for two iOS apps: Sight and Screenshots.  
 \begin{itemize}
 \item{Built an iOS application dataset and a application classifier with interns.}
@@ -67,58 +65,31 @@ Designed algorithm for two iOS apps: Sight and Screenshots.
 \end{itemize}
 }
 \section{Research Experience}
+\cventry{Nov. 2014}{Density Equalization: Efficient Occluded Prediction and avoidance for Multi-agent Motion Planning}
+{AAMAS 2017}{coauthor with Liang He, Dinesh Manocha}{}
+{
+A real-time multi-agent motion planning algorithm which can handle narrow-passage problem.
+}
+\cventry{Aug. 2016}{Resolution-Complete Multi-agent Motion Planning with Arbitrarily-Shaped Obstacles}{AAAI 2017}{coauthor with Liang He, Dinesh Manocha}{}
+{
+We highlight its performance on challenging 2D benchmarks and highlight the benefits over prior methods.
+}
 \cventry{Spring.2014}{Pedestrian Segmentation after Detection}{Diploma Project}{advised by Ai Haizhou}{}
 {
-Features
-\begin{itemize}
-\item Apply superpixel segmentation as an approach to preprocess the image as pre-segmentation.
-\item Propose a probabilistic model to compute the segmentation confidence map.
-\item Apply sparse coding method to the process of result refinement.
-\end{itemize}
-Experiments demonstrate that our method is much more efficient than the usual  Graph-Cut based method.
+Apply superpixel segmentation, probabilistic model and sparse codinng to compute the segmentation confidence map. Highlight in computing efficiency.
 }
-\cventry{Summer.2013}{Context based Binary Image Retrieval  based on Visual Vocabulary}{Hong Kong Polytechnic University}{}{}
+\cventry{Summer.2013}{Context based Binary Image Retrieval  based on Visual Vocabulary}{Hong Kong Polytechnic University}{submitted to ICPR 2014}{}
 {
-Features
-\begin{itemize}
-\item apply the algorithm to patent image retrieval.
-\item the recall rate is 5\% higher than the best method(AHDH)
-\end{itemize}
-This work is going to submit to ICPR 2014.
+Application of this algorithm is to patent image retrieval.
 }
-\cventry{Mar. 2013}{Handwriting Digits Recognition based on Neural Network and Restricted Boltzmann Machine}{Artificial Neural Network}{advised by Prof. Zhu Xiaoyan}{}
-{
-Features
-\begin{itemize}
-\item back-probagation neural network
-\item restricted Boltzmann machine to pre-train the digits data
-\item directional line element as selected feature
-\item the precision rate is over 97\% 
-\end{itemize}
-}
-\cventry{Oct. 2012}{Viberation Frequency Computation of Elastic Object by Computer Vision Methods}{Computer Vision}{}{}
-{
-Practical work to support a research on electricity engineering. At first the task is to analyze a video of a vibrating composite insulator at a high rate with small amplitude, which can be hardly detected by human eyes. I found a method to extract the shape transformation of the insulator and compute the length and area of the shape, then the frequency can be easily compute by FFT(fast Fourier transform). Incidentally, all these work is finished in 2 hours.
-}
-\cventry{Jun. 2012}{Digital Tone Tuner Design and Fabrication}{Digital Logic Circuits}
-{cooperated with Ai Qingyao}{}
-{
-This is the final project for my Digital Logic Circuits course. We achieve
-\begin{itemize}
-\item listen and recognize a tune, then play it again.
-\item each part of the gadget was selected and purchased on our own
-\item compact printable circuit board design
-\item the core algorithm is implemented on a programmable logic device using VHDL.
-\item show the level of tune by an LED board, get the tune by a MIC and play it by a speaker
-\end{itemize}
-}
+
+
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %-------------------------------------------------------------------------------------
 \section{Awards}
 \cventry{Nov. 2011}{Beijing Marathon}{}{}{}{}{}
 \cventry{Sep. 2011}{Scholarship in Tsinghua University }{3rd Place}{}{}{}
-\cventry{Nov. 2008}{National Olympiad in Informatics in Provinces}{1st Prize}{}{}{}
-\cventry{Nov. 2007}{National Olympiad in Informatics in Provinces}{1st Prize}{}{}{}{}
+\cventry{Nov. 2008 - Nov. 2007}{National Olympiad in Informatics in Provinces}{1st Prize}{}{}{}
 
 \end{document}
